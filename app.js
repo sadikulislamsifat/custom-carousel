@@ -11,14 +11,30 @@ const images = [
 ];
 let imgIndex = 0;
 
- const img = document.getElementById('carousel-img');
+const img = document.getElementById('carousel-img');
 
- setInterval(() => {
-    if(imgIndex === images.length){
-        imgIndex = 0;
-    }
-    const imgLink = images[imgIndex];
-    img.setAttribute('src', imgLink)
-    console.log(imgLink);
-    imgIndex++;
- }, 1000)
+
+setInterval(() => {
+   if(imgIndex === images.length){
+       imgIndex = 0;
+   }
+   const imgLink = images[imgIndex];
+   img.setAttribute('src', imgLink)
+   console.log(imgLink);
+   imgIndex++;
+}, 1000)
+
+
+
+
+
+//    img.style.color = 'white';
+
+//  setInterval( () => {
+//     const imgLink = images[imgIndex];
+//     console.log(imgLink)
+//     document.img.style.backgroungImage = `${imgLink}`;
+//     imgIndex++;
+//  },1000)
+
+
